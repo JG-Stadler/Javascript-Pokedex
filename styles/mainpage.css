@@ -1,3 +1,9 @@
+.poke-container{
+    flex-wrap: wrap;
+}
+
+/* Estrutura dos cards de pokemon da pagina principal */
+
 .pokecard{
     background-color: red;
     width: 200px;
@@ -41,4 +47,7 @@
 .pokecard>.poke-info-btn{
     grid-row: 3;
     grid-column: 1/5;
+    font-size: small;
+    width: 80%;
+    text-align: center;
 }

@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
 *{
     margin: 0 !important;
     padding: 0 !important;
+    font-family: "8bits-font","Archivo Black",Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: "Pokemon-logo-font";
+    src: url(../assets/fonts/pokemon/Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family: "8bits-font";
+    src: url(../assets/fonts/pokemon_classic/Pokemon\ Classic.ttf);
 }
