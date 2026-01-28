@@ -14,3 +14,38 @@
     font-family: "8bits-font";
     src: url(../assets/fonts/pokemon_classic/Pokemon\ Classic.ttf);
 }
+:root {
+  /* 🎨 Cores principais Pokémon */
+  --pokemon-blue: #2A75BB;
+  --pokemon-blue-dark: #3C5AA6;
+  --pokemon-yellow: #FFCB05;
+
+  /* ⚫⚪ Neutras */
+  --pokemon-black: #1A1A1A;
+  --pokemon-white: #FFFFFF;
+
+  /* 🔴 Pokébola */
+  --pokeball-red: #EE1515;
+  --pokeball-white: #F5F5F5;
+  --pokeball-black: #222224;
+
+  /* Tipos de Pokémon */
+  --type-normal:   #A8A77A;
+  --type-fire:     #EE8130;
+  --type-water:    #6390F0;
+  --type-electric: #F7D02C;
+  --type-grass:    #7AC74C;
+  --type-ice:      #96D9D6;
+  --type-fighting: #C22E28;
+  --type-poison:   #A33EA1;
+  --type-ground:   #E2BF65;
+  --type-flying:   #A98FF3;
+  --type-psychic:  #F95587;
+  --type-bug:      #A6B91A;
+  --type-rock:     #B6A136;
+  --type-ghost:    #735797;
+  --type-dragon:   #6F35FC;
+  --type-dark:     #705746;
+  --type-steel:    #B7B7CE;
+  --type-fairy:    #D685AD;
+}

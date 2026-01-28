@@ -1,3 +1,28 @@
+/* Cabeçalho da pagina */
+.main-menu{
+    background-color: var(--pokeball-red);
+}
+.logo{
+    font-family: "Pokemon-logo-font", "8bit-font","Archivo Black", Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+.search-box{
+    background-color: var(--pokeball-white);
+}
+.btn-buscar{
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/img/lupa-personalizada.png);
+    background-size: contain;
+}
+.search-box input{
+    border: none;
+    font-size: small;
+    outline: none;
+}
+
+/* Caixa principal - listagem de pokemons */
+
 .poke-container{
     flex-wrap: wrap;
 }
