@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/mainpage.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Pokedex com JS</title>
+</head>
+<body>
+    <header class="d-flex flex-row justify-content-around p-3">
+        <div class="logo">Pokedex</div>
+        <form class="search-box">
+            <input type="search" placeholder="Pokemon">
+            <input type="submit" value="buscar">
+        </form>
+    </header>
+    <main class="poke-container d-flex align-items-center justify-content-around justify-content-evenly ">
+        <div class="pokecard d-grid mt-3 rounded">
+            <div class="pokeball-logo"><img src="assets/img/favicon.ico"></div>
+            <h1 class="pokemon-name">Pikachu</h1>
+            <div class="pokeclas">🔥</div>
+            <picture class="forest-bg rounded">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Imagem do pokemon" class="pokemon-img">
+            </picture>
+            <button class="poke-info-btn btn btn-light p-1" >Mais informações</button>
+        </div>
+    </main>
+</body>
+</html>

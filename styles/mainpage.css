@@ -1,0 +1,44 @@
+.pokecard{
+    background-color: red;
+    width: 200px;
+    height: 270px;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: repeat(4,25%);
+    justify-items: center;
+    align-items: center;
+}
+.pokecard>.pokeball-logo{
+    grid-row: 1;
+    grid-column: 1;
+}
+.pokecard>.pokeball-logo>img{
+    width: 20px; 
+}
+.pokecard>.pokemon-name{
+    grid-row: 1;
+    grid-column: 2/4;
+    font-size: large;
+    justify-self: flex-start;
+}
+.pokecard>.poke-class{
+    grid-row: 1;
+    grid-column: 4;
+    font-size: larger; /*provisório*/
+}
+.pokecard>.forest-bg{
+    grid-row: 2;
+    grid-column: 1/5;
+    background-image: url(../assets/img/floresta8bits.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+}
+.pokecard .pokemon-img{
+    width: 100%;
+}
+.pokecard>.poke-info-btn{
+    grid-row: 3;
+    grid-column: 1/5;
+}
