@@ -11,7 +11,6 @@ const fetchApiInfo = async(url) => {
             return new Error("Erro na requisição");
         }
         const pokemons_list = await response.json();
-        console.log(pokemons_list.results);
         LoadPokemons(pokemons_list.results);
     }
     catch{
@@ -35,7 +34,7 @@ LoadPokemons = (pokemons_array) => {
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i+1}.png"
                      alt="Imagem do pokemon" class="pokemon-img">
                 </picture>
-                <button class="poke-info-btn btn btn-light p-1" >Ver mais</button>
+                <button class="poke-info-btn btn btn-light p-1" onclick="GetPokeName(this)">Ver mais</button>
             </div>
         `;
     });
@@ -64,7 +63,7 @@ searchForm.addEventListener('submit',async(e)=>{
                         <img src="${pokemonFromSearch.sprites.front_default}"
                         alt="Imagem do pokemon" class="pokemon-img">
                     </picture>
-                    <button class="poke-info-btn btn btn-light p-1" >Ver mais</button>
+                    <button class="poke-info-btn btn btn-light p-1" onclick="GetPokeName(this)">Ver mais</button>
                 </div>
         `;
         }
