@@ -27,15 +27,15 @@ LoadPokemons = (pokemons_array) => {
     pokemons_array.map((pokemon, i) => {
         poke_cards_container.innerHTML += 
         `
-            <div class="pokecard d-grid mt-3 rounded">
+            <div class="pokecard d-grid mt-3 rounded overflow-hidden">
                 <div class="pokeball-logo"><img src="assets/img/favicon.ico"></div>
                 <h1 class="pokemon-name">${pokemon.name}</h1>
-                <div class="pokeclas">🔥</div>
-                <picture class="forest-bg rounded">
+                <div class="name-background"></div>
+                <picture class="lab-bg rounded d-flex align-items-start justify-content-center">
                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i+1}.png"
                      alt="Imagem do pokemon" class="pokemon-img">
                 </picture>
-                <button class="poke-info-btn btn btn-light p-1" >Mais informações</button>
+                <button class="poke-info-btn btn btn-light p-1" >Ver mais</button>
             </div>
         `;
     });
@@ -56,15 +56,15 @@ searchForm.addEventListener('submit',async(e)=>{
         poke_cards_container.innerHTML = ''; //Limpando conteúda para adição do resultado da pesquisa
         poke_cards_container.innerHTML += 
             `
-                <div class="pokecard d-grid mt-3 rounded">
+                <div class="pokecard d-grid mt-3 rounded overflow-hidden>
                     <div class="pokeball-logo"><img src="assets/img/favicon.ico"></div>
                     <h1 class="pokemon-name">${pokemonFromSearch.name}</h1>
-                    <div class="pokeclas">🔥</div>
-                    <picture class="forest-bg rounded">
+                    <div class="name-background"></div>
+                    <picture class="lab-bg rounded d-flex align-items-start justify-content-center">
                         <img src="${pokemonFromSearch.sprites.front_default}"
                         alt="Imagem do pokemon" class="pokemon-img">
                     </picture>
-                    <button class="poke-info-btn btn btn-light p-1" >Mais informações</button>
+                    <button class="poke-info-btn btn btn-light p-1" >Ver mais</button>
                 </div>
         `;
         }

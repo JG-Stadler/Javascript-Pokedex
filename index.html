@@ -11,14 +11,14 @@
     <title>Pokedex com JS</title>
 </head>
 <body>
-    <header class="d-flex flex-row justify-content-around p-3 main-menu">
-        <div class="logo" id="botao">Pokedex</div>
-        <form class="search-box d-flex rounded overflow-hidden p-1" id="search-form">
-            <input type="search" placeholder="Buscar pokemon" id="input-pokename" required>
+    <header class="d-flex align-items-center justify-content-around p-3 main-menu">
+        <div class="logo"><img src="assets/img/pokedex-logo.png" alt="logo-pokedex"></div>
+        <form class="search-box d-flex align-items-center rounded overflow-hidden p-1" id="search-form">
+            <input type="search" placeholder="Buscar pokemon" id="input-pokename" required class="pk-name-input">
             <input type="submit" value="" class="btn btn-buscar">
         </form>
     </header>
-    <main class="poke-container d-flex align-items-center justify-content-around justify-content-evenly ">
+    <main class="poke-container d-flex align-items-center justify-content-around justify-content-evenly m-auto mt-5 mb-5">
         <div class="spinner-border mt-5" role="status"></div>
     </main>
 </body>
