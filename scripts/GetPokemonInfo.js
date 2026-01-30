@@ -22,7 +22,15 @@ const  FetchPokeData = async(urlSelectedPokemon) => { //Requisição da api com 
 // Função para carregar os dados do pokemon na pagina de informações
 
 const LoadPokeInfo = (pokemon) =>{
+    // Carregamento das informações na pokedex
     document.getElementById("pokemon-img").src = pokemon.sprites.front_default;
     document.getElementById("pokemon-name").innerText = pokemon.name;
     document.getElementById("pokemon-experience").innerText = `Experiência base: ${pokemon.base_experience}`;
-};
+    // Carregamento das informações na caixa lateral
+    document.getElementById("pk-name-info").innerText += ` ${pokemon.name}`;
+    document.getElementById("pk-code-info").innerText += ` ${pokemon.id}`; 
+    //Carregamento das habilidades
+    pokemon.moves.map((moveOBJ)=>{
+        document.getElementById("pk-skills-info").innerText += ` ${moveOBJ.move.name}, `; 
+    });
+}

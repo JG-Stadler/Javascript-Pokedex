@@ -11,6 +11,7 @@
 .nav-link{
     color: var(--pokemon-yellow);
     text-shadow: 0 0 5px var(--pokemon-blue-dark);
+    font-size: xx-small;
 }
 .nav-link:hover{
     color: var(--pokemon-blue);
@@ -20,7 +21,7 @@
 /* Pagina principal (informações do pokemon) */
 
 .info-page{
-    
+    gap: 50px;
 }
 .pokedex{
     background-image: url(../assets/img/pokedex.jpg);
@@ -36,7 +37,7 @@
     filter: drop-shadow(5px 5px 10px Black);
 }
 .pokemon-name{
-    bottom: 21.5%;
+    bottom: 21.4%;
     left: 50%;
     transform: translateX(-50%);
     font-size: smaller;
@@ -47,4 +48,24 @@
     font-size: xx-small;
     width: 44.8%;
     height: 13%;
+}
+
+/* Tela seção de informações */
+
+.pokemon-info{
+    width: 350px;
+    max-width: 95vw;
+    align-self: flex-start;
+}
+.pokemon-name-info-page{
+    font-size: larger;
+}
+.pokemon-code{
+    font-size: smaller;
+}
+.pokemon-skills{
+    text-align: justify;
+    font-size: xx-small;
+    height: 300px;
+    overflow-y: scroll;
 }
