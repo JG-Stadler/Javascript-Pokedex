@@ -8,7 +8,7 @@ https://jg-stadler.github.io/Javascript-Pokedex/
 ---
 
 ## 📸 Preview
-![Preview do projeto](assets/site-preview.png);
+![Preview do projeto](assets/img/site-preview.png);
 Aplicação simples e responsiva que permite pesquisar Pokémon pelo nome e visualizar informações como imagem e nome diretamente da API.
 
 ---
