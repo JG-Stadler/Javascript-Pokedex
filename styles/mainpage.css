@@ -1,5 +1,19 @@
 body{
-    background-color: var(--pokeball-white);
+    /* background-color: var(--pokeball-white); */
+    background-image: url(../assets/img/floresta_pokemon.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+body::after{
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    z-index: -1;
 }
 
 /* Cabeçalho da pagina */
