@@ -55,7 +55,7 @@ searchForm.addEventListener('submit',async(e)=>{
         poke_cards_container.innerHTML = ''; //Limpando conteúda para adição do resultado da pesquisa
         poke_cards_container.innerHTML += 
             `
-                <div class="pokecard d-grid mt-3 rounded overflow-hidden>
+                <div class="pokecard d-grid mt-3 rounded overflow-hidden">
                     <div class="pokeball-logo"><img src="assets/img/favicon.ico"></div>
                     <h1 class="pokemon-name">${pokemonFromSearch.name}</h1>
                     <div class="name-background"></div>

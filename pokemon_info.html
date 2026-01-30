@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/PokeInfo.css">
-    <script src="scripts/GetPokemonsInfo.js" defer></script>
+    <script src="scripts/GetPokemonInfo.js" defer></script>
     <title>Informações do Pokemon</title>
 </head>
 <body>
@@ -16,9 +16,19 @@
         <!-- barra de navegação -->
         <nav class="nav-bar d-flex align-items-center">
             <a href="index.html" class="nav-link m-3 mt-0 mb-0 text-uppercase">Inicio</a>
-            <a href="https://portifolio-joao-stadler.vercel.app" class="nav-link m-3 mt-0 mb-0 text-uppercase" target="_blank">Criador</a>
+            <a href="https://portifolio-joao-stadler.vercel.app" class="nav-link m-3 mt-0 mb-0 text-uppercase"
+            target="_blank">Criador</a>
             <a href="https://pokeapi.co" class="nav-link m-3 mt-0 mb-0 text-uppercase" target="_blank">API</a>
         </nav>
     </header>
+    <!-- Conteúdo principal da pagina -->
+    <main class="info-page  d-flex align-items-center justify-content-center">
+        <main class="pokedex position-relative rounded">
+            <img src="assets/img/foto-pokemon-nao-carregada.png" 
+            alt="Imagem do pokemon" class="pokemon-img position-absolute" id="pokemon-img">
+            <h1 class="pokemon-name position-absolute text-uppercase" id="pokemon-name">Nome</h1>
+            <p class="experience position-absolute p-1" id="pokemon-experience">Experiência base</p>
+        </main>
+    </main>
 </body>
 </html>

@@ -89,6 +89,7 @@ body{
 }
 .pokecard .pokemon-img{
     height: 100%;
+    filter: drop-shadow(5px 5px 10px Black);
 }
 .pokecard>.poke-info-btn{
     grid-row: 3;

@@ -16,3 +16,35 @@
     color: var(--pokemon-blue);
     text-shadow: 0 0 5px var(--pokemon-yellow);
 }
+
+/* Pagina principal (informações do pokemon) */
+
+.info-page{
+    
+}
+.pokedex{
+    background-image: url(../assets/img/pokedex.jpg);
+    background-size: contain;
+    width: calc(736px/2.5);
+    height: calc(1104px/2.5);
+}
+.pokemon-img{
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    filter: drop-shadow(5px 5px 10px Black);
+}
+.pokemon-name{
+    bottom: 21.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: smaller;
+}
+.experience{
+    bottom: 4.9%;
+    left: 30.5%;
+    font-size: xx-small;
+    width: 44.8%;
+    height: 13%;
+}
