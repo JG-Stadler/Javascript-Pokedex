@@ -28,7 +28,7 @@ body::after{
 .nav-link{
     color: var(--pokemon-yellow);
     text-shadow: 0 0 5px var(--pokemon-blue-dark);
-    font-size: xx-small;
+    font-size: x-small;
 }
 .nav-link:hover{
     color: var(--pokemon-blue);

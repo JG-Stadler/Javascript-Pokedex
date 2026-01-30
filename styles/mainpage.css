@@ -49,6 +49,7 @@ body::after{
     flex-wrap: wrap;
     width: 90%;
     gap: 20px;
+    margin-bottom: 200px !important;
 }
 
 /* Estrutura dos cards de pokemon da pagina principal */
@@ -116,4 +117,23 @@ body::after{
     background-color: #949494;
     color: var(--pokeball-white);
     text-shadow: 0 0 3px black;
+}
+
+/* Rodapé da pagina */
+
+.main-page-footer{
+    background-color: var(--pokeball-red);
+}
+.nav-list{
+    flex-wrap: wrap;
+}
+.nav-link{
+    font-size: smaller;
+    color: var(--pokemon-yellow);
+}
+.nav-link:hover{
+    color: var(--pokemon-blue);
+}
+.project-description{
+    font-size: xx-small;
 }
