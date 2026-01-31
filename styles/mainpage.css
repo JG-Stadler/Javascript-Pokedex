@@ -18,7 +18,8 @@ body::after{
 
 /* Cabeçalho da pagina */
 .main-menu{
-    background-color: var(--pokeball-red);
+    /* background-color: var(--pokeball-red); */
+    background-image: radial-gradient(var(--pokeball-red) 60%,#b00000,#710000,#420000);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479);
 }
 .logo>img{
@@ -62,7 +63,7 @@ body::after{
     grid-template-columns: 20% repeat(2,30%) 20%;
     justify-items: center;
     align-items: center;
-    background-image: radial-gradient(red 60%,#b00000,#710000,#420000);
+    background-image: radial-gradient(var(--pokeball-red) 60%,#b00000,#710000,#420000);
     position: relative;
     padding: 15px 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);

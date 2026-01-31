@@ -1,0 +1,23 @@
+@media (max-width: 700px) {
+    .main-menu{
+        flex-direction: column !important;
+        gap: 30px;
+    }   
+    .logo>img{
+        width: 300px;
+        max-width: 90vw;
+    }
+    .poke-container{
+        flex-direction: column !important;
+    }
+    .pokecard{
+        width: 250px;
+        height: 320px;
+    }
+}
+@media (max-width: 450px) {
+    .pk-name-input{
+        font-size: 10px !important;
+        width: 200px;
+    }   
+}

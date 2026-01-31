@@ -1,0 +1,66 @@
+.menu-btn{
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/img/pokeball-menu-button.jpg);
+    background-size: contain;
+    background-position: center center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+}
+@media (max-width:700px) {
+    .info-page{
+        flex-direction: column;
+    }
+    .pokemon-info{
+        align-self: center !important;
+        margin-bottom: 100px !important;
+    }
+}
+@media (max-width:550px) {
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column !important;
+        width: 100vw;
+        height: 100vh;
+        background-image: radial-gradient(var(--pokeball-white) 40%, #888888);
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transform: scaleX(0);
+        transition: transform .5s;
+        transform-origin: right;
+    }
+    .activated-button{
+        animation: Rotate .5s linear;
+    }
+    .open-nav{
+        transform: scaleX(1) !important;
+    }
+    .nav-link{
+        font-size: x-large !important;
+        color: black !important;
+        font-weight: bolder !important;
+        text-shadow: none !important;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media (max-width:360px) {
+    .pokedex{
+        transform: scale(0.8);
+    }
+}
+@keyframes Rotate {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
